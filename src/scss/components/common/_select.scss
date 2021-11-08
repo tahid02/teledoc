@@ -1,0 +1,28 @@
+.select {
+  position: relative;
+}
+
+.selected-item {
+  background-color: $primary;
+}
+.select-item {
+  position: absolute;
+  z-index: 100;
+  background-color: yellow;
+  height: 20vh;
+  overflow-y: scroll;
+}
+.select-item {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+.select-item::-webkit-scrollbar {
+  width: 10px;
+}
+.select-item::-webkit-scrollbar-track {
+  background: orange;
+}
+.select-item::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+}
