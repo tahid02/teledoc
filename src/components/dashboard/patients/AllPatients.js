@@ -17,6 +17,7 @@ import { MdDelete } from 'react-icons/md';
 import { AiFillPlusCircle } from 'react-icons/ai';
 import { useState } from 'react';
 import TooltipText from 'components/dashboard/common/TooltipText';
+import { selectedPagesNo, initialPageNo } from 'utils/paginationPage';
 
 const AllPatients = () => {
   const [showedPatientsNo, setShowedPatientsNo] = useState(10);
@@ -24,20 +25,19 @@ const AllPatients = () => {
   const [patientsShowed, setPatientsShowed] = useState(
     allPatientsDummyData.slice(0, 10)
   );
+
+  const [pages, setPages] = useState(
+    initialPageNo(allPatientsDummyData.length)
+  );
+
   const handleSelect = (e) => {
     console.log(e);
-    setShowedPatientsNo(parseInt(e));
-    setPatientsShowed(allPatientsDummyData.slice(0, parseInt(e)));
+    setShowedPatientsNo(() => parseInt(e));
+    setPatientsShowed(() => allPatientsDummyData.slice(0, parseInt(e)));
+    setPages(selectedPagesNo(allPatientsDummyData.length, e));
   };
-  const paginationNo =
-    allPatientsDummyData.length > showedPatientsNo
-      ? Math.ceil(allPatientsDummyData.length / showedPatientsNo)
-      : 1;
-  console.log({ paginationNo });
-  const pages = [];
-  for (let i = 1; i <= paginationNo; i++) {
-    pages.push(i);
-  }
+
+  console.log({ pages });
 
   const handlePageClicked = (pageNo) => {
     setActivePage(pageNo);
