@@ -4,8 +4,10 @@
 // import DoctorDetailPage from 'pages/DoctorDetailPage';
 // import AllDoctorPage from 'pages/dashboard/doctor/AllDoctorPage';
 // import AddPatientPage from 'pages/dashboard/patients/AddPatientPage';
-import AllPatientsPage from 'pages/dashboard/patients/AllPatientsPage';
+// import AllPatientsPage from 'pages/dashboard/patients/AllPatientsPage';
 // import RequestBloodPage from 'pages/RequestBloodPage';
+
+import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
 
 // import AddDoctorPage from 'pages/dashboard/doctor/AddDoctorPage';
 
@@ -19,10 +21,11 @@ const AppRouter = () => {
       {/* <RequestBloodPage /> */}
 
       {/* dashboard  */}
-      <AllPatientsPage />
+      {/* <AllPatientsPage /> */}
       {/* <AddPatientPage /> */}
       {/* <AllDoctorPage /> */}
       {/* <AddDoctorPage /> */}
+      <AllPaymentPage />
     </>
   );
 };

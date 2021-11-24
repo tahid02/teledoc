@@ -9,7 +9,17 @@ export const allPatientsDummyData = [
     patient_age: 43,
     weight: 43,
     patient_blood_group: 'Khaki',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 2,
@@ -21,7 +31,17 @@ export const allPatientsDummyData = [
     patient_age: 55,
     weight: 43,
     patient_blood_group: 'Blue',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 3,
@@ -34,7 +54,17 @@ export const allPatientsDummyData = [
     weight: 43,
 
     patient_blood_group: 'Puce',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 4,
@@ -46,7 +76,17 @@ export const allPatientsDummyData = [
     patient_age: 20,
     weight: 43,
     patient_blood_group: 'Yellow',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 5,
@@ -58,7 +98,17 @@ export const allPatientsDummyData = [
     patient_age: 28,
     weight: 43,
     patient_blood_group: 'Crimson',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 6,
@@ -70,7 +120,17 @@ export const allPatientsDummyData = [
     patient_age: 24,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 7,
@@ -82,7 +142,17 @@ export const allPatientsDummyData = [
     patient_age: 50,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 8,
@@ -94,7 +164,17 @@ export const allPatientsDummyData = [
     patient_age: 49,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 9,
@@ -106,7 +186,17 @@ export const allPatientsDummyData = [
     patient_age: 27,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 10,
@@ -118,7 +208,17 @@ export const allPatientsDummyData = [
     patient_age: 22,
     weight: 43,
     patient_blood_group: 'Aquamarine',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 11,
@@ -130,7 +230,17 @@ export const allPatientsDummyData = [
     patient_age: 43,
     weight: 43,
     patient_blood_group: 'Khaki',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 12,
@@ -142,7 +252,17 @@ export const allPatientsDummyData = [
     patient_age: 55,
     weight: 43,
     patient_blood_group: 'Blue',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 13,
@@ -155,7 +275,17 @@ export const allPatientsDummyData = [
     weight: 43,
 
     patient_blood_group: 'Puce',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 14,
@@ -167,7 +297,17 @@ export const allPatientsDummyData = [
     patient_age: 20,
     weight: 43,
     patient_blood_group: 'Yellow',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 15,
@@ -179,7 +319,17 @@ export const allPatientsDummyData = [
     patient_age: 28,
     weight: 43,
     patient_blood_group: 'Crimson',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 16,
@@ -191,7 +341,17 @@ export const allPatientsDummyData = [
     patient_age: 24,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 17,
@@ -203,7 +363,17 @@ export const allPatientsDummyData = [
     patient_age: 50,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 18,
@@ -215,7 +385,17 @@ export const allPatientsDummyData = [
     patient_age: 49,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 19,
@@ -227,7 +407,17 @@ export const allPatientsDummyData = [
     patient_age: 27,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 20,
@@ -239,7 +429,17 @@ export const allPatientsDummyData = [
     patient_age: 27,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 21,
@@ -251,7 +451,17 @@ export const allPatientsDummyData = [
     patient_age: 43,
     weight: 43,
     patient_blood_group: 'Khaki',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 22,
@@ -263,7 +473,17 @@ export const allPatientsDummyData = [
     patient_age: 55,
     weight: 43,
     patient_blood_group: 'Blue',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 23,
@@ -276,7 +496,17 @@ export const allPatientsDummyData = [
     weight: 43,
 
     patient_blood_group: 'Puce',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 24,
@@ -288,7 +518,17 @@ export const allPatientsDummyData = [
     patient_age: 20,
     weight: 43,
     patient_blood_group: 'Yellow',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 25,
@@ -300,7 +540,17 @@ export const allPatientsDummyData = [
     patient_age: 28,
     weight: 43,
     patient_blood_group: 'Crimson',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 26,
@@ -312,7 +562,17 @@ export const allPatientsDummyData = [
     patient_age: 24,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 27,
@@ -324,7 +584,17 @@ export const allPatientsDummyData = [
     patient_age: 50,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 28,
@@ -336,7 +606,17 @@ export const allPatientsDummyData = [
     patient_age: 49,
     weight: 43,
     patient_blood_group: 'Turquoise',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 29,
@@ -348,7 +628,17 @@ export const allPatientsDummyData = [
     patient_age: 27,
     weight: 43,
     patient_blood_group: 'Pink',
-    patient_admit_date: '10/6/2021',
+    patient_visit_data: [
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
   {
     id: 30,
@@ -360,6 +650,18 @@ export const allPatientsDummyData = [
     patient_age: 22,
     weight: 43,
     patient_blood_group: 'Aquamarine',
-    patient_admit_date: '10/6/2021',
+
+    patient_visit_data: [
+      //  this property can be shown in patient history data
+      {
+        patient_admit_date: '10/6/2021',
+        patient_visited_doctor: 'dr rajesh',
+        patient_treatment_name: 'check up',
+        patient_treatment_charges: 190, // this property will add in payment
+        patient_visit_tax: 8, // this property will add in payment
+        patient_visit_discount: 10, // this property will add in payment
+        patient_total_charge: 10, // this property will add in payment
+      },
+    ],
   },
 ];

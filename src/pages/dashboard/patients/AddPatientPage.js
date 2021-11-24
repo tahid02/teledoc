@@ -3,7 +3,7 @@ import AddPatient from 'components/dashboard/patients/AddPatient';
 
 const AddPatientPage = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"lightgray"}}>
       <TopNav />
       <AddPatient />
     </div>

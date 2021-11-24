@@ -1,7 +1,7 @@
 export const initialPageNo = (
   allDataLength: number,
   defaultNoPerPage?: number
-): any[] => {
+): number[] => {
   const pagesArray = Array.from(
     { length: Math.ceil(allDataLength / (defaultNoPerPage || 10)) },
     (x, k) => k + 1
@@ -12,7 +12,7 @@ export const initialPageNo = (
 export const selectedPagesNo = (
   allDataLength: number,
   selectedNo: number
-): any[] => {
+): number[] => {
   const selectedPagesArray = Array.from(
     {
       length:
