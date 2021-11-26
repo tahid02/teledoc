@@ -513,7 +513,7 @@ export const allPatientsDummyData = [
           others: 200,
           payment_method: 'cash',
           status: 'paid',
-          payment_date: 'date', // add payment
+          payment_date: '10-20-2021', // add payment
         },
         tax: 8, // this property will add in payment
         total_discount: '', // this property will show in all payment table by calculating all discount from total cost
