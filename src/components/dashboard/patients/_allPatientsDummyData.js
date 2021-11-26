@@ -494,17 +494,30 @@ export const allPatientsDummyData = [
     patient_mobile: '+57-630-322-9062',
     patient_age: 41,
     weight: 43,
-
     patient_blood_group: 'Puce',
+    patient_word_no: 20, // add patient
     patient_visit_data: [
       {
-        patient_admit_date: '10/6/2021',
-        patient_visited_doctor: 'dr rajesh',
-        patient_treatment_name: 'check up',
-        patient_treatment_charges: 190, // this property will add in payment
-        patient_visit_tax: 8, // this property will add in payment
-        patient_visit_discount: 10, // this property will add in payment
-        patient_total_charge: 10, // this property will add in payment
+        admit_date: '10/6/2021',
+        visited_doctor: 'dr rajesh',
+        treatment_name: 'check up',
+        payment: {
+          bill_no: '#20', // math random
+          // this property will add in add payment
+          email: 'abc@gmail.com',
+          word_no: 10,
+          doctor_cost: [190, 2, 10], // [visit time,per visit cost, discount in dollar/percent ]
+          medicine: [5, 20, 5], // [quantity, unit cost , discount]
+          xray: [3, 1, 4],
+          MRI: [10, 6, 2],
+          others: 200,
+          payment_method: 'cash',
+          status: 'paid',
+          payment_date: 'date', // add payment
+        },
+        tax: 8, // this property will add in payment
+        total_discount: '', // this property will show in all payment table by calculating all discount from total cost
+        total_cost: '', // this property will show in all payment table by calculating tax and discount discount from total cost
       },
     ],
   },

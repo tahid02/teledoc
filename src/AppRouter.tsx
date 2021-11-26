@@ -7,7 +7,9 @@
 // import AllPatientsPage from 'pages/dashboard/patients/AllPatientsPage';
 // import RequestBloodPage from 'pages/RequestBloodPage';
 
-import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
+import AddPaymentPage from 'pages/dashboard/payment/AddPaymentPage';
+
+// import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
 
 // import AddDoctorPage from 'pages/dashboard/doctor/AddDoctorPage';
 
@@ -25,7 +27,8 @@ const AppRouter = () => {
       {/* <AddPatientPage /> */}
       {/* <AllDoctorPage /> */}
       {/* <AddDoctorPage /> */}
-      <AllPaymentPage />
+      {/* <AllPaymentPage /> */}
+      <AddPaymentPage />
     </>
   );
 };
