@@ -1,13 +1,13 @@
-// import NavigationBar from 'components/common/NavigationBar';
+import NavigationBar from 'components/common/NavigationBar';
 import DoctorDetail from 'components/doctorDetail/DoctorDetail';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 
 const DoctorDetailPage = () => {
   return (
-    <Container>
-      {/* <NavigationBar /> */}
+    <div className="" style={{ backgroundColor: 'lightgray' }}>
+      <NavigationBar />
       <DoctorDetail />
-    </Container>
+    </div>
   );
 };
 

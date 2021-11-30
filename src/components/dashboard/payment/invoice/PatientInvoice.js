@@ -65,18 +65,19 @@ const PatientInvoice = () => {
             </p>
           </div>
           <div className="patient-info ms-auto d-flex flex-column align-items-end">
-            <strong>BILL TO:</strong>
-            {patient_name}
+            BILL TO: <strong> {patient_name}</strong>
             <br />
             {patient_address}
             <br />
             <div>
               {' '}
-              word no:<strong>{word_no}</strong>{' '}
+              <strong>word no:</strong>
+              {word_no}{' '}
             </div>
             <div>
               {' '}
-              Invoice Date:<strong>{payment_date}</strong>{' '}
+              <strong>Invoice Date:</strong>
+              {payment_date}{' '}
             </div>
           </div>
         </div>
@@ -104,12 +105,12 @@ const PatientInvoice = () => {
                       borderBottomColor: 'gray',
                     }}
                   >
-                    <td>{index}</td>
+                    <td>{index + 1}</td>
                     <td> {cost[3] || 'others' || ' - '} </td>
                     <td> {cost[0] || ' - '} </td>
                     <td> {cost[1] || ' - '} </td>
                     <td> {cost[0] * cost[1] || ' - '} </td>
-                    <td>{cost[2]}</td>
+                    <td>{cost[2] || ' - '}</td>
                     <td>{cost[0] * cost[1] - cost[2] || cost || ' - '}</td>
                   </tr>
                 );
@@ -119,21 +120,17 @@ const PatientInvoice = () => {
         </div>
 
         <div className="d-flex flex-column justify-content-end align-items-end">
-          <p>
-            Sub-total amount - <strong> $2900 </strong>
-          </p>
-          <p>
+          <div>Sub Total : $2900</div>
+          <div>
             vat:<strong></strong> 10%{' '}
-          </p>
-          <p>
-            Total <strong> </strong> $3210{' '}
-          </p>
-          <p>
-            Payment status: <strong>{status}</strong>{' '}
-          </p>
-          <p>
-            payment :<strong> {payment_method} </strong>{' '}
-          </p>
+          </div>
+          <div>
+            <h3>Total : $3210</h3>{' '}
+          </div>
+          <div>Method :{payment_method}</div>
+          <div>
+            Status: <strong>{status}</strong>{' '}
+          </div>
           <hr />
           <button className="btn btn-success">
             <AiFillPrinter /> print{' '}

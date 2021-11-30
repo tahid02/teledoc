@@ -48,18 +48,18 @@ const AllDoctor = () => {
                     <td>
                       <img src={doctorData.doctor_image} />{' '}
                     </td>
-                    <td>{doctorData.doctor_name}</td>
-                    <td>{doctorData.doctor_department}</td>
-                    <td>{doctorData.doctor_specialization}</td>
-                    <td>{doctorData.doctor_degree}</td>
+                    <td>{doctorData.name}</td>
+                    <td>{doctorData.department}</td>
+                    <td>{doctorData.specialization}</td>
+                    <td>{doctorData.degree}</td>
                     <td
                       nowrap="nowrap"
                       // className={{ whiteSpace: 'nowrap', overflowX: 'scroll' }}
                     >
-                      {doctorData.doctor_mobile}
+                      {doctorData.mobile}
                     </td>
-                    <td>{doctorData.doctor_email}</td>
-                    <td>{doctorData.doctor_joining_date}</td>
+                    <td>{doctorData.email}</td>
+                    <td>{doctorData.joining_date}</td>
                     <td>
                       <button className="btn btn-success">
                         <FaEdit />
