@@ -12,6 +12,9 @@ const FilterDoctors = () => {
   //   showAvailability: false,
   // });
   const [selected, setSelected] = useState({});
+
+  const [show, setShow] = useState(null);
+
   const selectedItems = {};
   const handleSelectedItem = (e) => {
     let buttonSelect = e.target.parentNode.getAttribute('name');
@@ -28,24 +31,30 @@ const FilterDoctors = () => {
           selected={selected}
           handleSelectedItem={handleSelectedItem}
           inputName="specialtyBtn"
+          show={show}
+          setShow={setShow}
           // defaultText="heart"
         />
         <Select
           selected={selected}
           handleSelectedItem={handleSelectedItem}
           inputName="consultationFeeBtn"
+          show={show}
+          setShow={setShow}
           // defaultText="40"
         />
         <Select
           selected={selected}
           handleSelectedItem={handleSelectedItem}
           inputName="availabilityBtn"
+          show={show}
+          setShow={setShow}
         />
       </div>
       <div className="">
         <button className="filter">filter</button>
       </div>
-      <AvailableConsultants />
+      {/* <AvailableConsultants /> */}
     </Container>
   );
 };

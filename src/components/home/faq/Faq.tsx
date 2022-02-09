@@ -1,26 +1,47 @@
+import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import QuesAndAns from './QuesAndAns';
 import { quesAndAns } from './_quesAndAns';
 
 const Faq = () => {
+  const [show, setShow] = useState<number | null>(null);
+  const toggle = (id: number) => {
+    if (show === id) {
+      // if show question is already active, then close it
+      return setShow(null);
+    }
+
+    setShow(id);
+  };
+
+  console.log({ show });
   return (
     <Container>
       <h2>
         Frequently Asked <span className="text-primary">Questions </span>
       </h2>
       <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-        repellendus ipsa cumque iure a magni fugit tempore. Accusamus,
-        accusantium sit.
+        A Frequently Asked Questions (FAQ) Forum is Often Used In Articles,
+        Websites, Email, Lists And Online Forums Where Common Questions Tend To
+        Occur !
       </p>
       <Row>
         <Col lg={6} md={12} sm={12}>
-          image
+          <img
+            src="https://save-me.vercel.app/_next/image?url=%2Fimages%2FFAQs.svg&w=640&q=75"
+            alt=""
+          />
         </Col>
-        <Col lg={6} md={12} sm={12}>
-          <div className="d-flex align-items-start flex-column ">
+        <Col
+          lg={6}
+          md={12}
+          sm={12}
+          className="d-flex align-items-center justify-content-center "
+          style={{ position: 'relative' }}
+        >
+          <div className="" style={{ position: 'absolute', width: '80%' }}>
             {quesAndAns().map((qna, index) => (
-              <QuesAndAns {...qna} key={index} />
+              <QuesAndAns {...qna} key={index} toggle={toggle} show={show} />
             ))}
           </div>
         </Col>
