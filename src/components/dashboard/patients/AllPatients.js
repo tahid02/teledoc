@@ -37,7 +37,7 @@ const AllPatients = () => {
     setPages(selectedPagesNo(allPatientsDummyData.length, e));
   };
 
-  console.log({ pages });
+  // console.log({ pages });
 
   const handlePageClicked = (pageNo) => {
     setActivePage(pageNo);
@@ -48,9 +48,9 @@ const AllPatients = () => {
       allPatientsDummyData.slice(showPatientsStart, showPatientsEnd)
     );
   };
-  console.log({ activePage });
+  // console.log({ activePage });
 
-  console.log({ patientsShowed });
+  // console.log({ patientsShowed });
   return (
     <section className="p-4">
       <section className="d-flex justify-content-start align-items-center">

@@ -1,6 +1,7 @@
 import LeftOffcanvas from './LeftOffcanvas';
 import { MdCircleNotifications } from 'react-icons/md';
 import { AiFillSetting } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 const TopNav = () => {
   return (
     <header
@@ -8,7 +9,10 @@ const TopNav = () => {
       style={{ backgroundColor: 'white' }}
     >
       <div className="me-auto ">
-        <LeftOffcanvas s /> <span className="ps-3">teleDoc</span>
+        <LeftOffcanvas s />{' '}
+        <span className="ps-3">
+          <Link to="/">teleDoc</Link>
+        </span>
       </div>
       <div className="">
         <MdCircleNotifications fontSize="1.5rem" />

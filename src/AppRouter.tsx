@@ -1,29 +1,28 @@
-// import Home from 'pages/Home';
+import Home from 'pages/Home';
 // import SearchDonorsPage from 'pages/SearchDonorsPage';
-import ViewDoctors from 'pages/ViewDoctors';
+// import ViewDoctors from 'pages/ViewDoctors';
 // import DoctorDetailPage from 'pages/DoctorDetailPage';
-// import AllDoctorPage from 'pages/dashboard/doctor/AllDoctorPage';
-// import AddPatientPage from 'pages/dashboard/patients/AddPatientPage';
-// import AllPatientsPage from 'pages/dashboard/patients/AllPatientsPage';
-import RequestBloodPage from 'pages/RequestBloodPage';
+// import RequestBloodPage from 'pages/RequestBloodPage';
 
-// import PatientInvoicePage from 'pages/dashboard/payment/PatientInvoicePage';
+import { Route, Routes } from 'react-router-dom';
 
-// import AddPaymentPage from 'pages/dashboard/payment/AddPaymentPage';
-
-// import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
-
-// import AddDoctorPage from 'pages/dashboard/doctor/AddDoctorPage';
+/// DASHBOARD COMPONENTS
+import AllPatientsPage from 'pages/dashboard/patients/AllPatientsPage';
+import AddPatientPage from 'pages/dashboard/patients/AddPatientPage';
+import AllDoctorPage from 'pages/dashboard/doctor/AllDoctorPage';
+import AddDoctorPage from 'pages/dashboard/doctor/AddDoctorPage';
+import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
+import AddPaymentPage from 'pages/dashboard/payment/AddPaymentPage';
+import PatientInvoicePage from 'pages/dashboard/payment/PatientInvoicePage';
 
 const AppRouter = () => {
   return (
     <>
       {/* <Home /> */}
-      <ViewDoctors />
+      {/* <ViewDoctors /> */}
       {/* <SearchDonorsPage /> */}
       {/* <DoctorDetailPage /> */}
-      <RequestBloodPage />
-
+      {/* <RequestBloodPage /> */}
       {/* dashboard  */}
       {/* <AllPatientsPage /> */}
       {/* <AddPatientPage /> */}
@@ -32,6 +31,38 @@ const AppRouter = () => {
       {/* <AllPaymentPage /> */}
       {/* <AddPaymentPage /> */}
       {/* <PatientInvoicePage /> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="dashboard/admin/allPatientsPage"
+          element={<AllPatientsPage />}
+        />
+        <Route
+          path="dashboard/admin/addPatientPage"
+          element={<AddPatientPage />}
+        />
+        <Route
+          path="dashboard/admin/allDoctorPage"
+          element={<AllDoctorPage />}
+        />
+        <Route
+          path="dashboard/admin/addDoctorPage"
+          element={<AddDoctorPage />}
+        />
+        <Route
+          path="dashboard/admin/allPaymentPage"
+          element={<AllPaymentPage />}
+        />
+        <Route
+          path="dashboard/admin/addPaymentPage"
+          element={<AddPaymentPage />}
+        />
+        <Route
+          path="dashboard/admin/patientInvoicePage"
+          element={<PatientInvoicePage />}
+        />
+      </Routes>
     </>
   );
 };

@@ -40,13 +40,13 @@ const AllPayment = () => {
   );
 
   const handleSelect = (e) => {
-    console.log(e);
+    // console.log(e);
     setShowedPatientsNo(() => parseInt(e));
     setPatientsShowed(() => allPatientsDummyData.slice(0, parseInt(e)));
     setPages(selectedPagesNo(allPatientsDummyData.length, e));
   };
 
-  console.log({ pages });
+  // console.log({ pages });
 
   const handlePageClicked = (pageNo) => {
     setActivePage(pageNo);
@@ -57,9 +57,9 @@ const AllPayment = () => {
       allPatientsDummyData.slice(showPatientsStart, showPatientsEnd)
     );
   };
-  console.log({ activePage });
+  // console.log({ activePage });
 
-  console.log({ patientsShowed });
+  // console.log({ patientsShowed });
   return (
     <section className="p-4">
       <section className="d-flex justify-content-start align-items-center">

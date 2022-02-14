@@ -6,8 +6,9 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 const RequestBloodInput = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const { selected, handleSelectedItem } = useSelect();
-  const [show, setShow] = useState(null);
+
+  const { show, setShow, selected, handleSelectedItem } = useSelect();
+
   return (
     <Container>
       <h className="text-center">Request </h>
@@ -20,6 +21,7 @@ const RequestBloodInput = () => {
             inputName="requestBloodGroup"
             show={show}
             setShow={setShow}
+            defaultText="group"
           />
         </Col>
         <Col>
@@ -29,6 +31,7 @@ const RequestBloodInput = () => {
             inputName="requestLocation"
             show={show}
             setShow={setShow}
+            defaultText="male"
           />
         </Col>
         <Col>
