@@ -12,13 +12,13 @@ import {
   Pagination,
 } from 'react-bootstrap';
 import { allPatientsDummyData } from './_allPatientsDummyData';
-import { FaEdit, FaHome } from 'react-icons/fa';
-import { MdDelete } from 'react-icons/md';
+import { FaHome } from 'react-icons/fa';
 import { AiFillPlusCircle } from 'react-icons/ai';
 import { useState } from 'react';
 import TooltipText from 'components/dashboard/common/TooltipText';
 import { selectedPagesNo, initialPageNo } from 'utils/paginationPage';
-
+import './allparents.css';
+import PatientTRow from './PatientTRow';
 const AllPatients = () => {
   const [showedPatientsNo, setShowedPatientsNo] = useState(10);
   const [activePage, setActivePage] = useState(1);
@@ -54,8 +54,8 @@ const AllPatients = () => {
   return (
     <section className="p-4">
       <section className="d-flex justify-content-start align-items-center">
-        <h3 className="">View Patients | </h3>
-        <div className="">
+        <h3 className="borderRight pe-1">View Patients </h3>
+        <div className="ps-3">
           <Breadcrumb className="text-center">
             {/* <Breadcrumb.Item as={Link} to="/">Home </Breadcrumb.Item> */}
             <Breadcrumb.Item href="#">
@@ -75,13 +75,18 @@ const AllPatients = () => {
         style={{ backgroundColor: 'white', borderRadius: '1%' }}
       >
         <div
-          className="d-flex flex-wrap table-head p-2 rounded-3  "
+          className="d-flex align-items-center flex-wrap table-head px-4 py-2 rounded-3  "
           style={{ backgroundColor: 'gray' }}
         >
           <div className="me-auto d-flex flex-wrap">
-            <span className="">Patients </span>
-            <input type="text" className="rounded-3" />
-            <button>search</button>
+            <div className="form-group has-search">
+              <span className="fa fa-search form-control-feedback"></span>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search patient"
+              />
+            </div>
           </div>
           <div className="new">
             <button className="btn  rounded p-0">
@@ -110,43 +115,7 @@ const AllPatients = () => {
             <tbody>
               {patientsShowed.map((patientData) => {
                 return (
-                  <tr
-                    key={patientData.id}
-                    style={{
-                      borderBottomWidth: '1px',
-                      borderBottomStyle: 'solid',
-                      borderBottomColor: 'gray',
-                    }}
-                  >
-                    <td style={{ marginTop: 'auto', marginBottom: 'auto' }}>
-                      <img
-                        src={patientData.patient_image}
-                        className="rounded"
-                      />{' '}
-                    </td>
-                    <td>{patientData.patient_name}</td>
-                    <td>{patientData.patient_gender}</td>
-                    <td>{patientData.patient_address}</td>
-                    <td nowrap="nowrap">{patientData.patient_mobile}</td>
-                    <td>{patientData.patient_age}</td>
-                    <td>{patientData.patient_blood_group}</td>
-                    <td>
-                      <button className="btn  rounded p-0">
-                        <TooltipText text="edit" position="bottom">
-                          <Button variant="transparent">
-                            <FaEdit className="text-success" size={25} />
-                          </Button>
-                        </TooltipText>
-                      </button>
-                      <button className="btn  rounded p-0">
-                        <TooltipText text="delete" position="bottom">
-                          <Button variant="transparent">
-                            <MdDelete className="text-danger" size={25} />
-                          </Button>
-                        </TooltipText>
-                      </button>
-                    </td>
-                  </tr>
+                  <PatientTRow patientData={patientData} key={patientData.id} />
                 );
               })}
             </tbody>

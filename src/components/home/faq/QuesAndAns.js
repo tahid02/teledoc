@@ -7,16 +7,13 @@ const QuesAndAns = ({ id, ques, ans, toggle, show }) => {
       className="d-flex flex-column bg-light rounded-3 mb-2"
       style={{ width: '100%' }}
     >
-      <button
-        onClick={() => toggle(id)}
-        className="ques-btn  rounded-3 border-none p-0"
-      >
+      <button onClick={() => toggle(id)} className="ques-btn  btn btn-primary">
         <div
           className={
             show ? 'bg-primary rounded-3 px-2 py-1 d-flex ' : 'd-flex '
           }
         >
-          <div className="">{ques}</div>
+          <div className="text-white">{ques}</div>
           <div className="ms-auto">
             {show === id ? <AiOutlineUp /> : <AiOutlineDown />}
           </div>
@@ -25,7 +22,7 @@ const QuesAndAns = ({ id, ques, ans, toggle, show }) => {
 
       <div className="text-start ">
         {' '}
-        {show === id ? <p className="ans">{ans}</p> : null}
+        {show === id ? <p className="ans bg-white rounded-3">{ans}</p> : null}
       </div>
     </div>
   );

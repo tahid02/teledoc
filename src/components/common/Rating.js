@@ -1,5 +1,5 @@
 export const rating = (
-  <div className="mt-1 text-sm d-flex align-items-center gap-0.5 text-primary">
+  <div className=" text-sm d-flex align-items-center gap-0.5 text-primary">
     <svg
       stroke="currentColor"
       fill="currentColor"

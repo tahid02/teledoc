@@ -1,8 +1,5 @@
 import Home from 'pages/Home';
-// import SearchDonorsPage from 'pages/SearchDonorsPage';
-// import ViewDoctors from 'pages/ViewDoctors';
 // import DoctorDetailPage from 'pages/DoctorDetailPage';
-// import RequestBloodPage from 'pages/RequestBloodPage';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -15,14 +12,17 @@ import AllPaymentPage from 'pages/dashboard/payment/AllPaymentPage';
 import AddPaymentPage from 'pages/dashboard/payment/AddPaymentPage';
 import PatientInvoicePage from 'pages/dashboard/payment/PatientInvoicePage';
 
+// navigation pages
+import ViewDoctors from 'pages/ViewDoctors';
+import SearchDonorsPage from 'pages/SearchDonorsPage';
+import RequestBloodPage from 'pages/RequestBloodPage';
+import LoginSignup from 'components/loginSignup/LoginSignup';
+
 const AppRouter = () => {
   return (
     <>
       {/* <Home /> */}
-      {/* <ViewDoctors /> */}
-      {/* <SearchDonorsPage /> */}
       {/* <DoctorDetailPage /> */}
-      {/* <RequestBloodPage /> */}
       {/* dashboard  */}
       {/* <AllPatientsPage /> */}
       {/* <AddPatientPage /> */}
@@ -34,6 +34,14 @@ const AppRouter = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
+
+        {/* Navigation routes */}
+        <Route path="viewDoctors" element={<ViewDoctors />} />
+        <Route path="search-donors" element={<SearchDonorsPage />} />
+        <Route path="blood-request" element={<RequestBloodPage />} />
+        <Route path="login-signup" element={<LoginSignup />} />
+
+        {/* Dashboard routes */}
         <Route
           path="dashboard/admin/allPatientsPage"
           element={<AllPatientsPage />}

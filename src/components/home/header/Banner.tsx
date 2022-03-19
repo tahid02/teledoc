@@ -4,7 +4,7 @@ import { FaUserEdit } from 'react-icons/fa';
 import { ImUsers } from 'react-icons/im';
 const Banner = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 ">
       <Container>
         <Row>
           <Col

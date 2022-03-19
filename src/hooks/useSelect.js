@@ -13,7 +13,7 @@ const useSelect = () => {
     // console.log('hello', e.target.getElementById('testing'));
     let selectedItem = e.target.innerText;
     selectedItems[buttonSelect] = selectedItem;
-    console.log({ selectedItems }); // here it loses its previous property.. may be its for rendering for setSelect
+    // console.log({ selectedItems }); // here it loses its previous property.. may be its for rendering for setSelect
     setSelected({ ...selected, ...selectedItems });
     setShow(null);
   };

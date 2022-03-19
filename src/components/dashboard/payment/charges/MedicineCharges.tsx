@@ -1,24 +1,24 @@
+import FloatingLabel from 'components/dashboard/common/FloatingLabel';
+
 const MedicineCharges = ({ register }: any) => {
   return (
     <>
       <h4 className="center-text">Medicine Charge*</h4>
+      <FloatingLabel
+        label="medicine qty"
+        type="number"
+        reg={{ ...register('medicine_quantity') }}
+      />
 
-      <input
-        {...register('medicine_quantity')}
-        placeholder="quantity"
+      <FloatingLabel
+        label="unit cost"
         type="number"
-        className="mb-2 "
+        reg={{ ...register('medicine_unit_cost') }}
       />
-      <input
-        {...register('medicine_unit_cost')}
-        placeholder="unit cost"
-        type="number"
-        className="mb-2 "
-      />
-      <input
-        {...register('medicine_discount')}
-        placeholder=" discount"
-        className="mb-2 "
+
+      <FloatingLabel
+        label="discount"
+        reg={{ ...register('medicine_discount') }}
       />
     </>
   );

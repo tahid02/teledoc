@@ -27,18 +27,18 @@ const Consultant = ({
       <div className="card-deck" style={{ position: 'relative' }}>
         <div className="card">
           <img className="card-img-top" src={profilePic} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">{name}</h5>
+          <div className="card-body py-0">
+            <h5 className="card-title mt-2 mb-0">{name}</h5>
             <small className="fs-6">{degrees[0]}</small>
-            <p className="mb-0">{rating}</p>
+            <p className="my-0">{rating}</p>
             <small className="">{speciality[0]}</small>
           </div>
           <div
-            className=" text-start d-flex flex-row flex-nowrap align-items-center"
-            style={{ padding: ' .5rem 1rem' }}
+            className=" text-start d-flex flex-row flex-nowrap align-items-center pb"
+            style={{ padding: ' 0 1rem .5rem 1rem' }}
           >
-            <div className="d-flex flex-column text-start">
-              <h1 className="mb-0 ">৳{consultationFee} </h1>
+            <div className="d-flex flex-column text-start pt-0">
+              <h3 className="mb-0 ">৳{consultationFee} </h3>
               <small>per consultation</small>
             </div>
             <div className="ms-auto cursor-pointer">

@@ -3,7 +3,13 @@ import { FaFacebook, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { GiDoctorFace } from 'react-icons/gi';
 const Footer = () => {
   return (
-    <Container className="pt-5">
+    <Container
+      className="pt-5"
+      style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.15)',
+        backdropFilter: 'blur(5px)',
+      }}
+    >
       <h3 className="text-center">teleDoc</h3>
       <p className="text-center">
         Medicines Cure Diseases, But Only Doctors Can Cure Patients Respect Them

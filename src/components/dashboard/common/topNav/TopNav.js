@@ -9,7 +9,7 @@ const TopNav = () => {
       style={{ backgroundColor: 'white' }}
     >
       <div className="me-auto ">
-        <LeftOffcanvas s />{' '}
+        <LeftOffcanvas />{' '}
         <span className="ps-3">
           <Link to="/">teleDoc</Link>
         </span>

@@ -37,7 +37,7 @@ export const availableConsultants: IConsultant[] = [
     password: '$2b$12$vlOIAO4ysPnZTl4PtYpx5.vw1hjhakopbwvhZPFW0gBYkEUhXnNHy',
     phoneNumber: '1234567890',
     profilePic:
-      'https://i.ibb.co/QQxbYF9/hacker-png-free-hacker-icon-image-37219-693.jpg',
+      'https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg',
     role: ['donor', 'doctor'],
     speciality: ['Cardiac'],
     totalExperienceYears: 9,
@@ -58,7 +58,7 @@ export const availableConsultants: IConsultant[] = [
     password: '$2b$12$KAQ2PtAyjTw.E00vHGfJXeM6.mO4VGQ3vcQfoWUJFDlcxoozPNSC2',
     phoneNumber: '1234567890',
     profilePic:
-      'https://i.ibb.co/QQxbYF9/hacker-png-free-hacker-icon-image-37219-693.jpg',
+      'https://media.istockphoto.com/photos/portrait-of-confident-young-medical-doctor-on-blue-background-picture-id1161336374?k=20&m=1161336374&s=612x612&w=0&h=ER2Gs06udn4kBPUy8SwLQR2su0GsRWe0kRHZvDbcQCc=',
     role: ['donor', 'doctor'],
     speciality: ['Heart', 'Cardiologist'],
     totalExperienceYears: 6,
@@ -79,7 +79,7 @@ export const availableConsultants: IConsultant[] = [
     password: '$2b$12$Kp8jNmhhA1.2ARRpxn6zJ.R10dbPL0enyPSSzh5NRm/u7AH7cv9Da',
     phoneNumber: '123',
     profilePic:
-      'https://i.ibb.co/QQxbYF9/hacker-png-free-hacker-icon-image-37219-693.jpg',
+      'https://media.istockphoto.com/photos/portrait-of-a-male-doctor-picture-id1342708859?b=1&k=20&m=1342708859&s=170667a&w=0&h=Q_F0jKkxXNlRb5wkDbeEaIrr6pQp8aDDdzRjvN6XmQU=',
     role: ['donor', 'doctor'],
     speciality: ['Cardiac'],
     totalExperienceYears: 12,
@@ -100,7 +100,7 @@ export const availableConsultants: IConsultant[] = [
     password: '$2b$12$NhVE0.bpi6KBYUVOK6Ip1..VhiERiv0d3oTlIZUyGW0jTse4i.1HW',
     phoneNumber: '+8801234567890',
     profilePic:
-      'https://i.ibb.co/QQxbYF9/hacker-png-free-hacker-icon-image-37219-693.jpg',
+      'https://img.freepik.com/free-photo/beautiful-doctor-pointing-fingers_1258-16474.jpg?size=626&ext=jpg&ga=GA1.1.2112874067.1642032000',
     role: ['donor', 'doctor'],
     speciality: ['Cardiac', 'Heart'],
     totalExperienceYears: 5,

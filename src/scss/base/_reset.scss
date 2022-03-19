@@ -5,7 +5,13 @@ td {
   vertical-align: middle;
 }
 body {
-  background-color: rgb(14, 13, 13);
+  background-color: $body;
+}
+.bg-gray {
+  background-color: $gray-section;
+}
+.bg-deep-gray {
+  background-color: $deep-gray;
 }
 .cursor-pointer {
   cursor: pointer;

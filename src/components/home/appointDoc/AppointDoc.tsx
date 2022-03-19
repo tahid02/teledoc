@@ -4,7 +4,7 @@ import { ImUsers } from 'react-icons/im';
 
 const AppointDoc = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 bg-gray">
       <Container>
         <Row>
           <Col lg={6} md={12} className="order-lg-0 order-xl-0  order-1">

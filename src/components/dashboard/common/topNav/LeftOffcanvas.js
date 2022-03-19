@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button, Offcanvas } from 'react-bootstrap';
-import { BiMenuAltLeft } from 'react-icons/bi';
-import { useLocation } from 'react-router-dom';
+import { RiMenuUnfoldFill } from 'react-icons/ri';
+import { Link, useLocation } from 'react-router-dom';
 import SideNavs from './SideNavs';
 
 function LeftOffcanvas() {
@@ -16,28 +16,40 @@ function LeftOffcanvas() {
   console.log('location', location.pathname);
   useEffect(() => {
     if (page === 'allPatientsPage' || page === 'addPatientPage') {
-      setActivePage('0');
+      setActivePage('patient');
     }
     if (page === 'allDoctorPage' || page === 'addDoctorPage') {
-      setActivePage('1');
+      setActivePage('doctor');
     }
     if (
       page === 'allPaymentPage' ||
       page === 'addPaymentPage' ||
       page === 'patientInvoicePage'
     ) {
-      setActivePage('4');
+      setActivePage('payment');
     }
   }, []);
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        <BiMenuAltLeft />
+        <RiMenuUnfoldFill />
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        className="bg-gray"
+        // style={{ backgroundColor: '#374151' }}
+      >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+            <Link to="/">
+              <img
+                src="https://i.ibb.co/CQYg6Lt/teledoc-logo-modified.jpg"
+                className="w-100"
+              ></img>
+            </Link>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <SideNavs activePage={activePage} />

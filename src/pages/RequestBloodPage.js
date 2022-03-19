@@ -1,10 +1,10 @@
-// import NavigationBar from "components/common/NavigationBar";
+import NavigationBar from 'components/common/NavigationBar';
 import RequestBloodInput from 'components/requestBlood/RequestBloodInput';
 
 const RequestBloodPage = () => {
   return (
     <div>
-      {/* <NavigationBar /> */}
+      <NavigationBar />
       <RequestBloodInput />
     </div>
   );

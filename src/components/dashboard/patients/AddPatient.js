@@ -1,6 +1,7 @@
 import { Breadcrumb, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { FaHome } from 'react-icons/fa';
+import FloatingLabel from 'components/dashboard/common/FloatingLabel';
 
 function AddPatient() {
   const {
@@ -38,67 +39,54 @@ function AddPatient() {
       >
         <h4 className="text-Center">Patient Information</h4>
 
-        <input
-          {...register('fullName', { required: true })}
-          placeholder="First name"
-          className="mb-2"
+        <FloatingLabel
+          label="first name"
+          reg={{ ...register('fullName', { required: true }) }}
         />
+
         {errors.fullName?.type === 'required' && (
           <p className="text-danger">Full Name is required</p>
         )}
-        <input {...register('email')} placeholder="Email" className="mb-2 " />
-        <input
-          {...register('mobile')}
-          placeholder="Mobile No."
-          className="mb-2 "
+        <FloatingLabel label="email" reg={{ ...register('email') }} />
+        <FloatingLabel label="mobile" reg={{ ...register('mobile') }} />
+        <FloatingLabel
+          label="age"
+          type="number"
+          reg={{ ...register('age', { min: 0, max: 90 }) }}
         />
-        <input
-          {...register('age', { min: 0, max: 90 })}
-          placeholder="age"
-          className="mb-2 "
-        />
-        <input
-          {...register('admitDate')}
+        <FloatingLabel
+          label="admitDate"
           type="date"
-          placeholder="Admit Date"
-          className="mb-2 "
-        />
-        <select {...register('gender')} className="mb-2 ">
-          <option value="">Gender</option>
-          <option value="A">Male</option>
-          <option value="B">Female </option>
-        </select>
-        <select {...register('blood-group')} className="mb-2 ">
-          <option value="">A+</option>
-          <option value="A">B+</option>
-          <option value="B">O- </option>
-        </select>
-        <input {...register('weight')} placeholder="weight" className="mb-2 " />
-        <input
-          {...register('address')}
-          placeholder="Address"
-          className="mb-2 "
+          reg={{ ...register('admitDate') }}
         />
 
-        <div>
-          <h4 className="text-Center">Registration Information</h4>
-          <input
-            {...register('Doctor')}
-            placeholder="Doctor Name"
-            className="mb-2 "
-          />
-          <input
-            {...register('wordNo')}
-            placeholder="Word No"
-            className="mb-2 "
-          />
-          <input
-            {...register('willVisit')}
-            type="date"
-            placeholder="Doctor Visit Date"
-            className="mb-2 "
-          />
+        <div className="d-flex flex-row flex-wrap ">
+          <span htmlFor="">Gender: </span>
+          <select {...register('gender')} className="mb-2 ms-1  me-5">
+            <option value="">Gender</option>
+            <option value="A">Male</option>
+            <option value="B">Female </option>
+          </select>
+          <span>Blood Group:</span>
+          <select {...register('blood-group')} className="mb-2 ms-1">
+            <option value="">A+</option>
+            <option value="A">B+</option>
+            <option value="B">O- </option>
+          </select>
         </div>
+
+        <FloatingLabel label="weight" reg={{ ...register('weight') }} />
+        <FloatingLabel label="address" reg={{ ...register('address') }} />
+
+        <h5 className="text-Center">Registration Information</h5>
+        <FloatingLabel label="Doctor" reg={{ ...register('Doctor') }} />
+        <FloatingLabel label="WordNo" reg={{ ...register('wordNo') }} />
+        <FloatingLabel
+          label="willVisit"
+          type="date"
+          reg={{ ...register('willVisit') }}
+        />
+
         <div className="d-flex justify-content-center">
           <button type="submit" className="btn btn-primary">
             add{' '}

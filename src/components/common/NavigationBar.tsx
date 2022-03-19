@@ -8,25 +8,50 @@
 // } from 'react-bootstrap';
 // import { MdDashboard } from 'react-icons/md';
 
+import { Link } from 'react-router-dom';
+import { MdDashboard } from 'react-icons/md';
+import { BsSearch } from 'react-icons/bs';
+import { RiMenu2Line } from 'react-icons/ri';
+
 const NavigationBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      className="navbar navbar-expand-lg navbar-light "
+      style={{ backgroundColor: 'rgb(246 245 244)' }}
+    >
       <div className="container">
         <div className="w-100 d-flex justify-content-around">
           <a className="navbar-brand" href="#">
-            Navbar
+            <Link to="/">
+              <img
+                src="https://i.ibb.co/CQYg6Lt/teledoc-logo-modified.jpg"
+                className="w-100"
+              ></img>
+            </Link>
           </a>
-          <form className="d-flex me-2">
+          <div className="d-flex me-2 " style={{ width: '50%' }}>
             <input
-              className="form-control me-2"
+              className="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              style={{
+                borderRight: 'none',
+                borderRadius: '10px 0px 0px 10px',
+              }}
             />
-            <button className="btn btn-outline-success" type="submit">
-              Search
+            <button
+              className="btn btn-primary"
+              style={{
+                borderColor: 'black',
+                border: 'none',
+                borderRadius: '0px 10px 10px 0px',
+              }}
+              type="submit"
+            >
+              <BsSearch />
             </button>
-          </form>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -36,52 +61,38 @@ const NavigationBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="">
+              <RiMenu2Line />
+            </span>
           </button>
         </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
+              <a className="nav-link" href="#">
+                <Link to="viewDoctors">view Doctors </Link>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                <Link to="search-donors">search Donors </Link>
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+            {/* <li className="nav-item">
+              <a className="nav-link" href="#">
+                <Link to="blood-request">Blood Request </Link>
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+            </li> */}
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <Link to="login-signup">login or signup </Link>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <MdDashboard size={25} />
+                <Link to="dashboard/admin/allDoctorPage">Dashboard</Link>
+              </a>
             </li>
           </ul>
         </div>
